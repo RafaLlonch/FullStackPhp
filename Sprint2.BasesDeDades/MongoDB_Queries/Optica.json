@@ -1,0 +1,55 @@
+use optica
+db.createCollection("proveidors")
+db.proveidors.insert({
+    "id": 1,
+    "nom":"Lents",
+        "adressa":{
+            "carrer": "Roca",
+            "numero": 2,
+            "pis": 2,
+            "porta": null,
+            "ciutat": "Barcelona",
+            "codipostal": 08276,
+            "pais": "Espanya",
+        },
+    "telefon": 937657676,
+    "fax": 937657676,
+    "nif": "487637676A"
+})
+db.createCollection("ulleres")
+db.ulleres.insert({
+    "id": 1,
+    "proveidor":1,
+    "marca": "Ray Ban",
+    "graduacio": [1,1.5],
+    "tipus": "flotant",
+    "color_montura": "negre",
+    "color_vidre": null,
+    "preu": 120
+})
+db.createCollection("clients")
+db.clients.insert({
+    "id": 1,
+    "nom": "Joan Alsina",
+    "adressa": {
+        "carrer": "Roc Boronat",
+        "pais": "España",
+        "codipostal": 08234,
+        "ciutat": "Barcelona",
+        "porta": "A",
+        "pis": 2,
+        "numero": 85,
+    },
+    "telefon": 937245343,
+    "correu_electornic": "joanalsina@gmail.com",
+    "data_registre": new Date(),
+    "client_recomenat": null,
+    "empleat": "Manel Visa",
+    "compra": [1]
+})
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+use pizzeria
+db.createCollection("clients")
+db.clients.insert({
+    "id": 1,
+    "nom": "Rafa",
+    "cognoms": "Llonch Perez",
+    "adressa":{
+        "carrer": "Picañol",
+        "numero": 37,
+        "pis": null,
+        "codi_postal": 08208,
+        "localitat": 1
+    },
+    "telefon": 606758473,
+    "comanda": 1
+})
+db.createCollection("comandes")
+db.comandes.insert({
+    "id": 1,
+    "data_hora": new Date(),
+    "repartiment_recollida": "repartiment",
+    "productes": [1,2],
+    "quantitat": [2,1],
+    "preu": 35,
+    "repartidor": 1,
+    "datahora_lliurament": new Date(),
+})
+db.createCollection("botigues")
+db.botigues.insert({
+    "id": 1,
+    "adressa":{
+        "carrer": "Prat de la riba",
+        "numero": 37,
+        "pis": null,
+        "codi_postal": 08208,
+        "localitat": 1
+    },
+    "comandes": [1],
+    "empleats": [1,2],    
+})
+db.createCollection("provincies")
+db.provincies.insert({
+    "id": 1,
+    "nom": "Barcelona",
+    "localitats": [{"id":1, "nom": "Barcelona"},{"id": 2, "nom": "Terrassa"}]
+})
+db.createCollection("productes")
+db.productes.insert({
+    "id": 1,
+    "tipus": "pizza",
+    "nom": "margarita",
+    "descripcio": "Pizza con tomate, oregano i queso",
+    "imatge": null,
+    "preu": 12
+})
+db.createCollection("categories")
+db.categories.insert({
+    "id": 1,
+    "nom": "basiques",
+    "pizzes":[1]
+})
+db.createCollection("empleats")
+db.empleats.insert({
+    "id": 1,
+    "nom": "Manel",
+    "cognoms": "Font Lopez",
+    "nif": "473635242G",
+    "telefon": 647352624,
+    "tipus_feina": "repartidor"
+})
+
+
+
+

@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(146, 142, 142);
+    width: 100%;
+    display: column;
+    justify-content: center;    
+}
+
+h2{
+    padding: 100px;  
+    font: condensed 200% sans-serif;
+    text-align: center;    
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+form input {
+    width: 30%;
+    height: 20px;
+    margin: 0.5rem;
+  }
+
+#Retirar{
+  font: condensed 100% sans-serif;
+}
+
+#Ingresar{
+  font: condensed 100% sans-serif;
+}

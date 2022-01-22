@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(146, 142, 142);
+    font: condensed 200% sans-serif;
+    text-align: center;
+
+    display: flex;
+    justify-content:center
+    
+    
+}
+
+body{
+    padding: 200px;
+    
+}

@@ -1,0 +1,156 @@
+header{
+    background: black;
+    
+    max-width:1160px;
+    border: 20px solid black;
+    
+    display: flex;
+    flex-direction: column;    
+}
+
+#gris{
+    background: rgba(68, 65, 102, 0.973);
+     
+
+    display: flex;
+    flex-direction: row;       
+}
+
+#naranja{
+    background: orange;
+    height: 60px;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;    
+}
+
+#rosa_uno{
+    background: rgb(149, 69, 112);
+    height: 20px;
+    margin: 20px;
+    flex-grow: 1;          
+}
+
+#rosa_dos{
+    background: rgb(149, 69, 112);
+    height: 20px;
+    margin: 20px;
+    flex-grow: 5;        
+}
+
+#rosa_tres{
+    background: rgb(149, 69, 112);
+    height: 20px;
+    margin: 20px;
+    flex-grow: 1;       
+}   
+
+#amarillo{
+    background: rgb(228, 211, 63);
+    height: 20px;
+    margin: 20px;   
+}
+
+section{
+    background: black;
+    max-width:1160px;
+    margin-top: 20px;
+    border: 20px solid black;
+    
+    display: flex;
+    flex-direction: row;         
+}
+
+main{
+    background: rgb(42, 62, 99);
+    border-right: 20px solid black;
+    
+    display: flex;
+    flex-grow: 4;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    box-sizing: border-box;           
+}
+
+nav{
+    background: rgb(175, 16, 101);
+
+    display: flex;     
+    flex-direction: column; 
+    flex-grow: 2;       
+}
+
+#azul_oscuro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 150px;   
+}
+
+#azul_oscuro >div{
+    display: flex;
+    background: rgb(55, 55, 206);
+    margin: 20px;   
+    height: 20px;   
+}
+
+#azul_claro{
+    background: cornflowerblue;
+    height: 20px;
+    margin: 20px;     
+}
+
+.amarillo_claro{
+    background: rgb(225, 235, 171);
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    background: black;
+    max-width:1160px;
+    height: 20px;
+    border: 20px solid black;
+    margin-top: 20px;
+}
+
+#amarillo2{
+    background: goldenrod;
+    height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    section{
+        background: yellow;
+        border: 20px solid yellow;
+        flex-direction: column; 
+        flex-wrap: wrap;  
+    }
+
+    main{
+        border-right: 0px;
+        border-bottom: 20px solid yellow;
+    }
+
+    nav{
+        border-bottom: 20px solid rgb(175, 16, 101) ;
+    }   
+}
+
+@media screen and (max-width: 736px) {
+    
+    #gris{
+        flex-direction: column;    
+    }
+
+    #azul_oscuro{
+        flex-wrap: nowrap;
+        
+        flex-direction: column;
+        max-height: 600px;   
+    }   
+}
